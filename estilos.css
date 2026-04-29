@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #1d2939;
+    background: linear-gradient(180deg, #eef4ff 0%, #f8fbff 45%, #eaf7f2 100%);
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 48px 8%;
+    background: linear-gradient(135deg, #0b3c8a, #11998e);
+    color: white;
+}
+
+.hero-texto {
+    flex: 1 1 360px;
+}
+
+.hero-diagrama {
+    flex: 0 1 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+}
+
+.hero-diagrama-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+
+.etiqueta {
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 0 0 14px;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.18);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.hero h1 {
+    margin: 0 0 16px;
+    font-size: 2.4rem;
+}
+
+.intro {
+    max-width: 640px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+main {
+    padding: 30px 8% 50px;
+}
+
+.contenido,
+.comparacion,
+.galeria-redes,
+.ejemplo,
+.formulario {
+    background: rgba(255, 255, 255, 0.88);
+    margin: 24px 0;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 16px 35px rgba(15, 23, 42, 0.08);
+}
+
+.contenido h2,
+.comparacion h2,
+.galeria-redes h2,
+.ejemplo h2,
+.formulario h2 {
+    margin-top: 0;
+    color: #0b3c8a;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+    margin: 28px 0;
+}
+
+.card {
+    padding: 24px;
+    border-radius: 20px;
+    color: #102a43;
+    box-shadow: 0 16px 35px rgba(15, 23, 42, 0.1);
+}
+
+.lan {
+    background: linear-gradient(180deg, #fff7d6, #ffe28a);
+}
+
+.man {
+    background: linear-gradient(180deg, #dbffe4, #95efad);
+}
+
+.wan {
+    background: linear-gradient(180deg, #dff7ff, #9dddf7);
+}
+
+.icono {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.75);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.tabla {
+    display: grid;
+    gap: 10px;
+}
+
+.fila {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: 12px;
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: #f3f8ff;
+}
+
+.encabezado {
+    background: #0b3c8a;
+    color: white;
+    font-weight: bold;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+}
+
+.galeria-item {
+    overflow: hidden;
+    border-radius: 18px;
+    background: #f7fbff;
+    box-shadow: 0 16px 32px rgba(15, 23, 42, 0.09);
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 220px;
+    display: block;
+    object-fit: cover;
+}
+
+.galeria-texto {
+    padding: 18px;
+}
+
+.galeria-texto h3 {
+    margin: 0 0 10px;
+    color: #123b78;
+}
+
+.galeria-texto p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+form label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #bfd0ea;
+    border-radius: 12px;
+    font-size: 1rem;
+    background: #fdfefe;
+}
+
+form button {
+    margin-top: 18px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #0b3c8a, #11998e);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    opacity: 0.92;
+}
+
+footer {
+    padding: 18px;
+    text-align: center;
+    background: #0f172a;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .hero {
+        padding: 36px 7%;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero-diagrama {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .fila {
+        grid-template-columns: 1fr;
+    }
+}

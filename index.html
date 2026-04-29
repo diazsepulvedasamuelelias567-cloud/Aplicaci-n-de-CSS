@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de redes: LAN, MAN y WAN</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-texto">
+            <p class="etiqueta">Tecnologia y conectividad</p>
+            <h1>Tipos de redes: LAN, MAN y WAN</h1>
+            <p class="intro">
+                Las redes informaticas permiten compartir informacion, recursos y servicios.
+                Segun su alcance geografico, pueden clasificarse en LAN, MAN y WAN.
+            </p>
+        </div>
+        <div class="hero-diagrama">
+            <img src="img/redes.png" alt="Diagrama de tipos de redes LAN, WAN y MAN" class="hero-diagrama-img">
+        </div>
+    </header>
+
+    <main>
+        <section class="contenido">
+            <h2>Concepto general</h2>
+            <p>
+                Una red es un conjunto de dispositivos conectados entre si para intercambiar
+                datos. El tipo de red depende de la distancia que cubre y del numero de equipos
+                que puede interconectar.
+            </p>
+        </section>
+
+        <section class="tarjetas">
+            <article class="card lan">
+                <div class="icono">L</div>
+                <h2>LAN</h2>
+                <p><strong>Local Area Network</strong> o red de area local.</p>
+                <p>Conecta equipos dentro de un espacio pequeno, como una casa, aula, oficina o laboratorio.</p>
+                <ul>
+                    <li>Alcance corto</li>
+                    <li>Alta velocidad</li>
+                    <li>Uso domestico o escolar</li>
+                </ul>
+            </article>
+
+            <article class="card man">
+                <div class="icono">M</div>
+                <h2>MAN</h2>
+                <p><strong>Metropolitan Area Network</strong> o red de area metropolitana.</p>
+                <p>Une varias redes locales dentro de una ciudad o una zona urbana amplia.</p>
+                <ul>
+                    <li>Cobertura intermedia</li>
+                    <li>Conecta sedes cercanas</li>
+                    <li>Uso institucional o empresarial</li>
+                </ul>
+            </article>
+
+            <article class="card wan">
+                <div class="icono">W</div>
+                <h2>WAN</h2>
+                <p><strong>Wide Area Network</strong> o red de area amplia.</p>
+                <p>Interconecta redes a grandes distancias, incluso entre paises o continentes.</p>
+                <ul>
+                    <li>Alcance muy grande</li>
+                    <li>Puede usar internet</li>
+                    <li>Ejemplo principal: la red mundial</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="comparacion">
+            <h2>Comparacion rapida</h2>
+            <div class="tabla">
+                <div class="fila encabezado">
+                    <span>Tipo</span>
+                    <span>Alcance</span>
+                    <span>Ejemplo</span>
+                </div>
+                <div class="fila">
+                    <span>LAN</span>
+                    <span>Salon, casa u oficina</span>
+                    <span>Red de computadoras del colegio</span>
+                </div>
+                <div class="fila">
+                    <span>MAN</span>
+                    <span>Ciudad o municipio</span>
+                    <span>Conexion entre varias sedes</span>
+                </div>
+                <div class="fila">
+                    <span>WAN</span>
+                    <span>Paises y continentes</span>
+                    <span>Internet</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="galeria-redes">
+            <h2>Imagenes relacionadas con las redes</h2>
+            <div class="galeria-grid">
+                <article class="galeria-item">
+                    <img src="img/pexels-field-engineer-147254-442152.jpg" alt="Tecnico revisando una instalacion de red">
+                    <div class="galeria-texto">
+                        <h3>Administracion de una LAN</h3>
+                        <p>En una red local es comun conectar computadores, routers y switches dentro de un mismo espacio.</p>
+                    </div>
+                </article>
+
+                <article class="galeria-item">
+                    <img src="img/pexels-japy-14690386.jpg" alt="Prueba de velocidad de una conexion de internet">
+                    <div class="galeria-texto">
+                        <h3>Conectividad para MAN y WAN</h3>
+                        <p>La velocidad de transmision y la estabilidad son claves cuando una red cubre mayores distancias.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="ejemplo">
+            <h2>Ejemplo de uso</h2>
+            <p>
+                En una escuela, la sala de informatica puede funcionar como una <strong>LAN</strong>.
+                Si varias sedes del colegio se conectan dentro de la misma ciudad, forman una
+                <strong>MAN</strong>. Y si esa institucion comparte informacion con sedes en otros
+                paises, ya participa en una <strong>WAN</strong>.
+            </p>
+        </section>
+
+        <section class="formulario">
+            <h2>Consulta sobre redes</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="tema">Tipo de red que mas te interesa:</label>
+                <input type="text" id="tema" name="tema" placeholder="LAN, MAN o WAN" required>
+
+                <label for="mensaje">Comentario:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar consulta</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Trabajo practico de HTML y CSS | Tema: Tipos de redes</p>
+    </footer>
+</body>
+</html>
